@@ -1,5 +1,5 @@
 {
-       "name": "Mersal",
+       "name": "Hamker",
       "description": "An Anime themed Telegram group management bot.",
       "logo": "http://telegra.ph/file/dad52dfba82ba6ac43785.jpg",
       "keywords": [
@@ -7,9 +7,9 @@
          "anime",
          "group",
          "manager",
-         "Mersal"
+         "Hamker"
       ],   
-   "repository": "https://github.com/GodseXD/MersalRobot",
+   "repository": "https://github.com/HamkerX/HamkerRobot",
    "addons": [
       {
          "options": {
@@ -55,12 +55,12 @@
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "DevilsHaveliMF"
+         "value": "DevilHamker"
       },
       "UPDATES_CHANNEL": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "DevilsServer"
+         "value": "HamkerUpdate"
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
