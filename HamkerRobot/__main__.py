@@ -8,7 +8,7 @@ from sys import argv
 from typing import Optional
 from pyrogram import filters
 
-from MersalRobot import (
+from HamkerRobot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -26,12 +26,12 @@ from MersalRobot import (
     updater)
 
 # needed to dynamically load modules
-# NOTE: Module order is not guaranteed, specify that in the config file!
-from MersalRobot.modules import ALL_MODULES
-from MersalRobot.modules.helper_funcs.chat_status import is_user_admin
-from MersalRobot.modules.helper_funcs.misc import paginate_modules
-from MersalRobot.modules.misc import markdown_help_sender
-from MersalRobot.modules.disable import DisableAbleCommandHandler
+# NOTE: Med, specify that in the config file!
+from HamkerRobot.modules import ALL_MODULES
+from HamkerRobot.modules.helper_funcs.chat_status import is_user_admin
+from HamkerRobot.modules.helper_funcs.misc import paginate_modules
+from HamkerRobot.modules.misc import markdown_help_sender
+from HamkerRobot.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import (
@@ -66,7 +66,7 @@ def get_readable_time(seconds: int) -> str:
         else:
             remainder, result = divmod(seconds, 24)
         if seconds == 0 and remainder == 0:
-            break
+       HamkerRobot.modules.     break
         time_list.append(int(result))
         seconds = int(remainder)
 
@@ -91,7 +91,7 @@ PM_START_TEXT = """ ┗►  *What's Up Yoo! * ◄┛
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑ Add Mersal To Groups ☑",
+                            text="☑ Add Hamker To Groups ☑",
                             url=f"t.me/{BOT_USERNAME}?startgroup=true"),
                     ],
                      [
@@ -101,7 +101,7 @@ buttons = [
                    [
                        InlineKeyboardButton(text="NETWORK", url=f"https://t.me/Mersalnetwork"),
                        InlineKeyboardButton(text="LOGS", url=f"https://t.me/mersallogs"),
-                ],[ InlineKeyboardButton(text="COMMANDS HELP", callback_data="help_back"
+                ],[ Inlit="COMMANDS HELP", callback_data="help_back"
          ),
     ],
 ] 
@@ -133,7 +133,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("MersalRobot.modules." + module_name)
+    imported_module = importlib.import_module("HamkerRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
