@@ -6,7 +6,7 @@ ARQ_API_URL = "https://arq.hamker.in"
 ARQ_API_KEY =  "KGTHQB-IKDNAI-XXFCND-VDZFQI-ARQ"
 
 def get_user_list(config, key):
-    with open('{}/MersalRobot/{}'.format(os.getcwd(), config),
+    with open('{}/HamkerRobot/{}'.format(os.getcwd(), config),
               'r') as json_file:
         return json.load(json_file)[key]
 
@@ -21,9 +21,9 @@ class Config(object):
     API_HASH = "awew"
     TOKEN = "wow"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 5682621421  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "GodseXD"
-    SUPPORT_CHAT = 'DevilsHaveliMF'  #Your own group for support, do not add the @
-    UPDATES_CHANNEL = 'Devilsserver' #Your own channel for Updates of bot, Do not add @
+    OWNER_USERNAME = "Hamker"
+    SUPPORT_CHAT = 'DevilHamker'  #Your own group for support, do not add the @
+    UPDATES_CHANNEL = 'HamkerUpdate' #Your own channel for Updates of bot, Do not add @
     JOIN_LOGGER = -1001549441580  #Prints any new group the bot is added to, prints just the name and ID.
     REM_BG_API_KEY = "dxsh728mZMDmj4ijSZCNPZig"
     EVENT_LOGS = -1001549441580  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
